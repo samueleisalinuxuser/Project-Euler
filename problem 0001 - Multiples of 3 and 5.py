@@ -5,13 +5,9 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 """
 
 
-n = 100
 s = 0
 
-for i in range(0,1001):
-    if i%3 == 0: s+=i
-    elif i%5 == 0: s+=i
-    elif i%15 == 0: s+=i
-    else: pass
+for i in range(1000):
+    if i%3 == 0 or i%5 == 0: s+=i
 
 print(s)
